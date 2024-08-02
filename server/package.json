@@ -1,0 +1,33 @@
+{
+  "name": "wenot-server",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "tsc && node dist/main.js",
+    "dev": "nodemon main.ts",
+    "pm2": "pm2 start dist/main.js --exp-backoff-restart-delay=100 --name 0ep"
+  },
+  "author": "oynozan",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@chainflip/sdk": "^1.4.3",
+    "@swapkit/sdk": "^1.1.9",
+    "@swapkit/tokens": "^1.0.3",
+    "axios": "^1.7.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2",
+    "ts-node-dev": "^2.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.0.2"
+  }
+}
